@@ -21,11 +21,11 @@ public class GuerrillaMailTest {
 
     @Before
     public void setUp() throws Exception {
-       // System.setProperty("webdriver.chrome.driver",
-      //          "C:\\Users\\Sufian\\Desktop\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+               "C:\\Users\\Sufian\\Desktop\\chromedriver.exe");
        // System.setProperty("webdriver.ie.driver",
        //         "C:\\\\Users\\\\Sufian\\\\Desktop\\IEDriverServer.exe");
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
